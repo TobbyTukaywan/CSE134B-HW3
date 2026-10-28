@@ -8,6 +8,7 @@
     --button-fill: #cf6530;
     --button-border: #ffd36a;
     --font-color: white;
+    --music-fill: #0c9ef2;
     --nav-border-width: 0.2rem;
     --nav-item-padding: 0.35em 0.8em;
 }
@@ -72,6 +73,36 @@ h3 {
 
 page-description {
     display: block;
+    text-align: center;
+}
+
+music-ranking {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: var(--frame-padding);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--frame-padding);
+    border: 0.35rem solid var(--frame-border);
+    background-color: var(--music-fill);
+    text-align: center;
+
+    ol {
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+img,
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label[for="nitrorad-video"] {
     text-align: center;
 }
 
@@ -220,7 +251,7 @@ main {
 
 footer {
     margin-top: auto;
-    padding: var(--frame-padding);
+    padding: var(--frame-padding) var(--frame-padding) 5rem;
     border-top: var(--frame-border-width) solid var(--frame-border);
     background-color: var(--frame-fill);
     display: flex;
