@@ -1,0 +1,145 @@
+:root {
+    --font-stack: Amarante, serif;
+    --frame-fill: #8c3e26;
+    --frame-border: #e1ad45;
+    --frame-border-width: 1rem;
+    --frame-margin: 4rem;
+    --nav-fill: #cf6530;
+    --nav-border: #ffd36a;
+}
+
+@font-face {
+    font-family: Amarante;
+    src: url("assets/Amarante/Amarante-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: #1a1a1a;
+    background-image: url("assets/Village_art.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem var(--frame-margin) 0;
+
+    site-logo svg {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+nav {
+    flex: 1;
+    padding: 1rem;
+    border: var(--frame-border-width) solid var(--frame-border);
+    background-color: var(--frame-fill);
+
+    > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        > li {
+            position: relative;
+        }
+    }
+
+    li:hover > nav-dropdown,
+    li:focus-within > nav-dropdown {
+        display: flex;
+    }
+}
+
+nav-item {
+    display: inline-block;
+
+    a {
+        display: block;
+        padding: 0.35em 0.8em;
+        border: 0.2rem solid var(--nav-border);
+        background-color: var(--nav-fill);
+        color: var(--nav-border);
+        text-decoration: none;
+    }
+}
+
+nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.2rem);
+    z-index: 1;
+    flex-direction: column;
+    background-color: var(--nav-fill);
+    border: 0.2rem solid var(--nav-border);
+    white-space: nowrap;
+}
+
+nav-sub-item {
+    display: block;
+
+    a {
+        display: block;
+        padding: 0.35em 0.8em;
+        color: var(--nav-border);
+        text-decoration: none;
+    }
+}
+
+nav-sub-item + nav-sub-item {
+    border-top: 1px solid var(--nav-border);
+}
+
+main {
+    margin: var(--frame-margin);
+    padding: 1.5rem;
+    border: var(--frame-border-width) solid var(--frame-border);
+    background-color: var(--frame-fill);
+}
+
+footer {
+    margin-top: auto;
+    padding: 1.5rem;
+    border-top: var(--frame-border-width) solid var(--frame-border);
+    background-color: var(--frame-fill);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    p {
+        margin: 0;
+    }
+
+    button {
+        order: 1;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+}
+
+game-card {
+    article {
+        border: solid;
+        border-width: 3px;
+    }
+}
+
+release-date {
+    display: block;
+}

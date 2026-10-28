@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games | Yorbelnet</title>
     <link rel="icon" type="image/svg+xml" href="assets/Yorbel.svg">
-    <style>
-        article {
-            border: solid;
-            border-width: 3px;
-        }
-        release-date {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -29,17 +21,17 @@
         </site-logo>
         <nav>
             <ul>
-                <li><a href="index.html" title="Go to homepage">Home</a></li>
+                <li><nav-item><a href="index.html" title="Go to homepage">Home</a></nav-item></li>
                 <li>
-                    <a href="games.html" title="Learn about the games" class="active">Games</a>
-                    <ul>
-                        <li><a href="tak1.html" title="Learn about the first game">Tak and the Power of Juju</a></li>
-                        <li><a href="tak2.html" title="Learn about the second game">Tak 2: The Staff of Dreams</a></li>
-                        <li><a href="tak3.html" title="Learn about the third game">Tak: The Great Juju Challenge</a></li>
-                    </ul>
+                    <nav-item><a href="games.html" title="Learn about the games" class="active">Games</a></nav-item>
+                    <nav-dropdown>
+                        <nav-sub-item><a href="tak1.html" title="Learn about the first game">Tak and the Power of Juju</a></nav-sub-item>
+                        <nav-sub-item><a href="tak2.html" title="Learn about the second game">Tak 2: The Staff of Dreams</a></nav-sub-item>
+                        <nav-sub-item><a href="tak3.html" title="Learn about the third game">Tak: The Great Juju Challenge</a></nav-sub-item>
+                    </nav-dropdown>
                 </li>
-                <li><a href="history.html" title="Learn about the history and legacy of the series">History & Legacy</a></li>
-                <li><a href="about.html" title="Learn about the website">About</a></li>
+                <li><nav-item><a href="history.html" title="Learn about the history and legacy of the series">History & Legacy</a></nav-item></li>
+                <li><nav-item><a href="about.html" title="Learn about the website">About</a></nav-item></li>
             </ul>
         </nav>
     </header>
@@ -50,30 +42,36 @@
         </noscript>
         <h1>Games</h1>
         <p>The Tak series consists of three mainline games released between 2003 and 2005 which were developed by Avalanch Software and published by THQ and Nickelodeon. There were also several handheld versions and games based off of the cartoon, but these are not covered here and frankly not very good.</p>
-        <a href="tak1.html" title="Learn about the first game">
-            <article>
-                <h2>Tak and the Power of Juju</h2>
-                <img src="assets/Tak_and_the_Power_of_Juju_Coverart.png" alt="Tak and the Power of Juju">
-                <release-date>Released: October 15, 2003</release-date>
-                <p>The first game in the trilogy. A boy named Tak must save his village from the evil shaman Tlaloc with the help of powerful Juju spirits in this collectathon platformer.</p>
-            </article>
-        </a>
-        <a href="tak2.html" title="Learn about the second game">
-            <article>
-                <h2>Tak 2: The Staff of Dreams</h2>
-                <img src="assets/Tak_2_-_The_Staff_of_Dreams_Coverart.png" alt="Tak 2: The Staff of Dreams">
-                <release-date>Released: October 11, 2004</release-date>
-                <p>The sequel. Tak is back, wielding new Juju powers, and this time he must enter the world of dreams to rescue a mysterious princess from the Dream Guardian in this linear action platformer.</p>
-            </article>
-        </a>
-        <a href="tak3.html" title="Learn about the third game">
-            <article>
-                <h2>Tak: The Great Juju Challenge</h2>
-                <img src="assets/Tak_-_The_Great_Juju_Challenge_Coverart.png" alt="Tak: The Great Juju Challenge">
-                <release-date>Released: September 19, 2005</release-date>
-                <p>The grand finale. Tak and his old pal Lok compete together in the Great Juju Challenge for the fate of their village in this co-op time-attack adventure.</p>
-            </article>
-        </a>
+        <game-card>
+            <a href="tak1.html" title="Learn about the first game">
+                <article>
+                    <h2>Tak and the Power of Juju</h2>
+                    <img src="assets/Tak_and_the_Power_of_Juju_Coverart.png" alt="Tak and the Power of Juju">
+                    <release-date>Released: October 15, 2003</release-date>
+                    <p>The first game in the trilogy. A boy named Tak must save his village from the evil shaman Tlaloc with the help of powerful Juju spirits in this collectathon platformer.</p>
+                </article>
+            </a>
+        </game-card>
+        <game-card>
+            <a href="tak2.html" title="Learn about the second game">
+                <article>
+                    <h2>Tak 2: The Staff of Dreams</h2>
+                    <img src="assets/Tak_2_-_The_Staff_of_Dreams_Coverart.png" alt="Tak 2: The Staff of Dreams">
+                    <release-date>Released: October 11, 2004</release-date>
+                    <p>The sequel. Tak is back, wielding new Juju powers, and this time he must enter the world of dreams to rescue a mysterious princess from the Dream Guardian in this linear action platformer.</p>
+                </article>
+            </a>
+        </game-card>
+        <game-card>
+            <a href="tak3.html" title="Learn about the third game">
+                <article>
+                    <h2>Tak: The Great Juju Challenge</h2>
+                    <img src="assets/Tak_-_The_Great_Juju_Challenge_Coverart.png" alt="Tak: The Great Juju Challenge">
+                    <release-date>Released: September 19, 2005</release-date>
+                    <p>The grand finale. Tak and his old pal Lok compete together in the Great Juju Challenge for the fate of their village in this co-op time-attack adventure.</p>
+                </article>
+            </a>
+        </game-card>
     </main>
 
     <footer>

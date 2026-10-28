@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yorbelnet</title>
     <link rel="icon" type="image/svg+xml" href="assets/Yorbel.svg">
+    <link rel="stylesheet" href="styles.css">
 
     <script>
         class HelloWorld extends HTMLElement {
@@ -30,17 +31,17 @@
         </site-logo>
         <nav>
             <ul>
-                <li><a href="index.html" title="Go to homepage" class="active">Home</a></li>
+                <li><nav-item><a href="index.html" title="Go to homepage" class="active">Home</a></nav-item></li>
                 <li>
-                    <a href="games.html" title="Learn about the games">Games</a>
-                    <ul>
-                        <li><a href="tak1.html" title="Learn about the first game">Tak and the Power of Juju</a></li>
-                        <li><a href="tak2.html" title="Learn about the second game">Tak 2: The Staff of Dreams</a></li>
-                        <li><a href="tak3.html" title="Learn about the third game">Tak: The Great Juju Challenge</a></li>
-                    </ul>
+                    <nav-item><a href="games.html" title="Learn about the games">Games</a></nav-item>
+                    <nav-dropdown>
+                        <nav-sub-item><a href="tak1.html" title="Learn about the first game">Tak and the Power of Juju</a></nav-sub-item>
+                        <nav-sub-item><a href="tak2.html" title="Learn about the second game">Tak 2: The Staff of Dreams</a></nav-sub-item>
+                        <nav-sub-item><a href="tak3.html" title="Learn about the third game">Tak: The Great Juju Challenge</a></nav-sub-item>
+                    </nav-dropdown>
                 </li>
-                <li><a href="history.html" title="Learn about the history and legacy of the series">History & Legacy</a></li>
-                <li><a href="about.html" title="Learn about the website">About</a></li>
+                <li><nav-item><a href="history.html" title="Learn about the history and legacy of the series">History & Legacy</a></nav-item></li>
+                <li><nav-item><a href="about.html" title="Learn about the website">About</a></nav-item></li>
             </ul>
         </nav>
     </header>
